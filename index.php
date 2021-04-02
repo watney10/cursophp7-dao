@@ -73,9 +73,58 @@
 	$usuario->update("user16","161616");
 
 	echo $usuario;
+*/
+
+	// Remove usuário da tabela.
+	
+	$cliente = new Usuario();
+	$cliente->loadByid(18);
+	$cliente->remover();
+	
+	echo $cliente;
+	
+*/
+/*
+	
+	$sql = new Sql();
+	
+	$usuarios = $sql->select("SELECT * FROM tb_usuarios");
+	
+	echo json_encode($usuarios);
+	
+*/	
+
+/*		
+	$user = new Usuario();
+	
+	$user->loadId(13);
+	
+	echo $user;
+*/	
+
+/*
+
+	$result = Usuario::searche("wa");
+
+	echo json_encode($result);
+*/
+
+/*
+	$autenticar = new Usuario();
+	$autenticar->login("Watney","123");
+	
+	echo $autenticar;
+*/	
+
+/*
+	$list = Usuario::getList();
+
+	echo json_encode($list);
+*/	
 
 
-				
+
+
 ?>
 
 
